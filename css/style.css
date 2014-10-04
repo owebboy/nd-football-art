@@ -1,0 +1,79 @@
+html {
+  margin: 1em 2em;
+}
+
+header h1 {
+  font: 500 1.5em 'Georgia', serif;
+  text-transform: uppercase;
+  margin: 0;
+  color: #002B5B;
+}
+
+header h2 {
+  font: 500 1em 'Helvetica', arial, sans-serif;
+  margin: 0;
+}
+
+header h2 a {
+  color: #DCB439;
+  text-decoration: none;
+}
+
+#bg pre {
+  color: HSLA(45, 70%, 54%, .5);
+}
+
+#fighting-irishman {
+  bottom: 100px;
+  -webkit-animation: 10s walking-irishman linear;
+  position: absolute;
+  visibility: hidden;
+}
+
+#ncaa-football {
+  -webkit-animation: 10s football-throw linear;
+  position: absolute;
+  visibility: hidden;
+}
+
+#ncaa-football pre {
+  color: #3D0603;
+}
+
+#nd-logo {
+  -webkit-animation: 10s logo-comein linear;
+  position: absolute;
+  visibility: visible;
+  bottom: 100px;
+}
+
+@-webkit-keyframes logo-comein {
+  from {
+    bottom: -2500px;
+  }
+  to {
+    bottom: 100px;
+  }
+}
+
+@-webkit-keyframes football-throw {
+  from {
+    visibility: visible;
+    bottom: -500px;
+    left: -500px;
+  }
+  to {
+    bottom: 2000px;
+    left: 2000px;
+  }
+}
+
+@-webkit-keyframes walking-irishman {
+  from {
+    visibility: visible;
+    left: -2000px;
+  }
+  to {
+    left: 2000px;
+  }
+}
